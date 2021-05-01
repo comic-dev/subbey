@@ -1,0 +1,28 @@
+{
+  "name": "subbey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "types": "src/types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comic-dev/subbey.git"
+  },
+  "keywords": [
+    "kek",
+    "meme",
+    "memes"
+  ],
+  "author": "comic.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comic-dev/subbey/issues"
+  },
+  "homepage": "https://github.com/comic-dev/subbey#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
