@@ -23,17 +23,20 @@ subbey({sub: 'dank', max: 1, nfsw: false});
 _sub_
 
 _The subreddit you want to recieve posts from_
+
 **type: string**
 **default: "memes"**
 
 _nfsw_
 
 _Wether you want to recieve NFSW posts_
+
 **type: boolean**
 **default: false**
 
 _max_
 
 _The number of results you want to recieve_
+
 **type: number**
 **default: 3**
