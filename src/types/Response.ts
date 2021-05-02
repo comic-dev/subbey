@@ -1,9 +1,9 @@
 export interface Response {
     /**
-     * @description The name of the post
+     * @description The title of the post
      * @type {string}
      */
-    name: string;
+    title: string;
 
     /**
      * @description The thumbnail for the post
