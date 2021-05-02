@@ -1,6 +1,6 @@
 {
   "name": "subbey",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "",
   "main": "src/index.js",
   "types": "src/types/index.d.ts",
