@@ -76,4 +76,10 @@ export interface Response {
      * @type {boolean}
      */
     video: boolean;
+
+    /**
+     * @description The link of this post
+     * @type {string}
+     */
+    link: string;
 }
