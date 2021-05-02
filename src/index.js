@@ -3,8 +3,8 @@ module.exports = async (options) => {
     if (!options) options = { sub: "memes", nfsw: false, max: 3 };
     let { data: { children } } = await (await get(`https://api.reddit.com/r/${options?.sub ?? "memes"}`)).data;
     return children.filter((v, index) => {
-        return v.data.preview && ((options?.nfsw ? v.data.over_18 === true : !v.data.over_18) && index <= options.max)
-    }).map((v) => {
+        return v.data.preview && ((options?.nfsw ? v.data.over_18 === true : !v.data.over_18))
+    }).slice(0, options.max).map((v) => {
         const { title, ups, downs, upvote_ratio, thumbnail, author, all_awardings, url, permalink, subreddit_name_prefixed, is_original_content, over_18, score, is_video } = v.data;
         return {
             title,
