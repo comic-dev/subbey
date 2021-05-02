@@ -16,7 +16,7 @@ module.exports = {
                 thumbnail,
                 author,
                 awardings: all_awardings.map(v => { return { name: v.name, icon: v.icon_url } }),
-                link: `https://reddit.com/${permalink}`,
+                link: `https://reddit.com${permalink}`,
                 subreddit: subreddit_name_prefixed,
                 original: is_original_content,
                 nfsw: over_18,
