@@ -33,4 +33,3 @@ module.exports = {
         return res.slice(0, options.max)
     }
 }
-module.exports.subbey();
