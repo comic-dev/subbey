@@ -66,10 +66,10 @@ export interface Response {
     author: string;
 
     /**
-     * @description The url of this post
+     * @description The url to the media of this post
      * @type {string}
      */
-    url: string;
+    media: string;
 
     /**
      * @description Wether this post is an video or not

@@ -11,7 +11,7 @@ module.exports = {
                 title,
                 ups,
                 downs,
-                url,
+                media: url,
                 ratio: `${upvote_ratio * 100}%`,
                 thumbnail,
                 author,
