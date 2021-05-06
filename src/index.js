@@ -1,8 +1,8 @@
 const { default: { get } } = require("axios");
 module.exports = {
     subbey: async (options) => {
-        if (!options) options = { sub: "memes", nfsw: false, max: 3 };
-        let { data: { children } } = await (await get(`https://api.reddit.com/r/${options?.sub ?? "memes"}`)).data;
+        if (!options) options = { sub: "memes", nfsw: false, max: 3, top: false };
+        let { data: { children } } = await (await get(`https://api.reddit.com/r/${options?.sub ?? "memes"}${options?.top ? "/top" : ""}`)).data;
         return children.filter(v => {
             return v.data.preview && ((options?.nfsw ? v.data.over_18 === true : !v.data.over_18))
         }).slice(0, options.max).map(v => {
@@ -23,6 +23,8 @@ module.exports = {
                 score,
                 video: is_video
             }
-        });
+        }).sort((_, b) => {
+            return Math.floor(Math.random() * b)
+        })
     }
 }
