@@ -1,6 +1,6 @@
 {
   "name": "subbey",
-  "version": "1.2.9",
+  "version": "1.3.1",
   "description": "subbey is an lightweight and asynchronous Reddit API wrapper to retrieve post easily",
   "main": "src/index.js",
   "types": "src/types/index.d.ts",
