@@ -8,35 +8,49 @@ CommonJS
 
 ```js
 const {subbey} = require('subbey');
-subbey({sub: 'dank', max: 1, nfsw: false});
+subbey({sub: 'dank', max: 1, nfsw: false, top: true});
 ```
 
 ECMAScript
 
 ```ts
 import {subbey} from 'subbey';
-subbey({sub: 'dank', max: 1, nfsw: false});
+subbey({sub: 'dank', max: 1, nfsw: false, top: true});
 ```
 
 # Options
 
-_sub_
+```
+/**
+     * @description The subreddit you want to recieve posts from
+     * @optional
+     * @default memes
+     * @type {string}
+*/
+    sub?: string,
 
-_The subreddit you want to recieve posts from_
+/**
+     * @description Wether you want to recieve NFSW results
+     * @optional
+     * @default false
+     * @type {boolean}
+*/
+    nfsw?: boolean;
 
-**type: string**
-**default: "memes"**
+/**
+     * @description The number of results you want to recieve
+     * @optional
+     * @default 3
+     * @type {number}
+*/
+    max?: number
 
-_nfsw_
 
-_Wether you want to recieve NFSW posts_
-
-**type: boolean**
-**default: false**
-
-_max_
-
-_The number of results you want to recieve_
-
-**type: number**
-**default: 3**
+/**
+     * @description Wether you want the top posts or not
+     * @optional
+     * @default false
+     * @type {boolean}
+*/
+    top?: boolean
+```
